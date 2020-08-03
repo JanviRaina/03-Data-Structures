@@ -75,9 +75,9 @@ void printRightBoundary (Node* root) {
         printRightBoundary(root->right);
         cout << root->data << " ";
     }
-    else if (root->left) {
-        printLeftBoundary(root->left);
-        cout << root->data << endl;
+    else if(root->left){
+        printRightboundary(root->left);
+        cout<<root->data<<" ";    
     }
 }
 
