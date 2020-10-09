@@ -17,7 +17,7 @@ void leftRotateByOne (int arr[], int n) {
     int temp = arr[0], i;
     for (i = 0; i < n - 1; i++)
         arr[i] = arr[i + 1];
-    arr[i] = temp;
+    arr[n] = temp;
 }
 
 void rightRotateByOne (int arr[], int n) {
